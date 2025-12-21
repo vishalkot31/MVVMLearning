@@ -8,14 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var vm = MovieViewModel(apiService: APIService())
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack{
+            Group {
+                    if vm.isLoading {
+                        ProgressView()
+                    }
+                    else if let error = vm.errorMessage {
+                        Text(error)
+                            .foregroundStyle(.red)
+                    }
+                    else{
+                        List(vm.movies){movie in
+                            Text("Movie  \(movie.title)")
+                        }
+                    }
+                       
+            } .navigationTitle("Movies")
+                .navigationBarTitleDisplayMode(.inline)
+        }.task {
+            await vm.getMovies()
         }
-        .padding()
     }
 }
 
