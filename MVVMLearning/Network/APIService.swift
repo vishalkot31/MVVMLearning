@@ -6,8 +6,11 @@
 //
 
 import Foundation
-import Alamofire
-
+//(Open/Closed + Dependency Inversion)
+//Protocol = abstraction
+//Enables mocking & testing
+//D: Dependency Inversion → ViewModel depends on protocol, not concrete class
+//Generic
 enum APIError:Error {
     case invalidUrl
     case invalidResponse
@@ -18,6 +21,7 @@ protocol APIServiceProtocol {
     func fetchMovies<T:Codable>() async throws -> T 
 }
 
+//Concrete class
 class APIService:APIServiceProtocol {
     
     func fetchMovies<T:Codable>() async throws -> T {
@@ -43,6 +47,24 @@ class APIService:APIServiceProtocol {
         }
     }
     
-    
-  
+}
+
+//MOCK Service class fo generic data type
+class MockServiceClass:APIServiceProtocol {
+    enum MockError: Error {
+          case noMockData
+      }
+    var mockResult:Any?
+    var shouldThrowError = false
+    func fetchMovies<T>() async throws -> T where T : Decodable, T : Encodable {
+        if shouldThrowError{
+            throw APIError.invalidResponse
+        }
+        
+        guard let result = mockResult as? T else{
+            throw MockError.noMockData
+        }
+        
+        return result
+    }
 }

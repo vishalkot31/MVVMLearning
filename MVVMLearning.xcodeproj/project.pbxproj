@@ -6,16 +6,40 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		C038F6D22EF7C5B200394CC5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C038F6D12EF7C5B200394CC5 /* Alamofire */; };
-		C038F6D42EF7C5B200394CC5 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C038F6D32EF7C5B200394CC5 /* AlamofireDynamic */; };
-/* End PBXBuildFile section */
+/* Begin PBXContainerItemProxy section */
+		C064E9402EFC27D7000803B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0A30ECE2EF6CCEA0016A81F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0A30ED52EF6CCEA0016A81F;
+			remoteInfo = MVVMLearning;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C06FD1F12EF9531D00148B0D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C064E93C2EFC27D7000803B0 /* BookwormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookwormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A30ED62EF6CCEA0016A81F /* MVVMLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		C064E93D2EFC27D7000803B0 /* BookwormTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BookwormTests;
+			sourceTree = "<group>";
+		};
 		C0A30ED82EF6CCEA0016A81F /* MVVMLearning */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MVVMLearning;
@@ -24,12 +48,17 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C064E9392EFC27D7000803B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0A30ED32EF6CCEA0016A81F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C038F6D22EF7C5B200394CC5 /* Alamofire in Frameworks */,
-				C038F6D42EF7C5B200394CC5 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				C0A30ED82EF6CCEA0016A81F /* MVVMLearning */,
+				C064E93D2EFC27D7000803B0 /* BookwormTests */,
 				C0A30ED72EF6CCEA0016A81F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				C0A30ED62EF6CCEA0016A81F /* MVVMLearning.app */,
+				C064E93C2EFC27D7000803B0 /* BookwormTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +86,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C064E93B2EFC27D7000803B0 /* BookwormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C064E9422EFC27D7000803B0 /* Build configuration list for PBXNativeTarget "BookwormTests" */;
+			buildPhases = (
+				C064E9382EFC27D7000803B0 /* Sources */,
+				C064E9392EFC27D7000803B0 /* Frameworks */,
+				C064E93A2EFC27D7000803B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C064E9412EFC27D7000803B0 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C064E93D2EFC27D7000803B0 /* BookwormTests */,
+			);
+			name = BookwormTests;
+			packageProductDependencies = (
+			);
+			productName = BookwormTests;
+			productReference = C064E93C2EFC27D7000803B0 /* BookwormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C0A30ED52EF6CCEA0016A81F /* MVVMLearning */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0A30EE12EF6CCEA0016A81F /* Build configuration list for PBXNativeTarget "MVVMLearning" */;
@@ -62,6 +116,7 @@
 				C0A30ED22EF6CCEA0016A81F /* Sources */,
 				C0A30ED32EF6CCEA0016A81F /* Frameworks */,
 				C0A30ED42EF6CCEA0016A81F /* Resources */,
+				C06FD1F12EF9531D00148B0D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -72,8 +127,6 @@
 			);
 			name = MVVMLearning;
 			packageProductDependencies = (
-				C038F6D12EF7C5B200394CC5 /* Alamofire */,
-				C038F6D32EF7C5B200394CC5 /* AlamofireDynamic */,
 			);
 			productName = MVVMLearning;
 			productReference = C0A30ED62EF6CCEA0016A81F /* MVVMLearning.app */;
@@ -89,6 +142,10 @@
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
+					C064E93B2EFC27D7000803B0 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = C0A30ED52EF6CCEA0016A81F;
+					};
 					C0A30ED52EF6CCEA0016A81F = {
 						CreatedOnToolsVersion = 26.2;
 					};
@@ -104,7 +161,6 @@
 			mainGroup = C0A30ECD2EF6CCEA0016A81F;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				C038F6D02EF7C5B200394CC5 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C0A30ED72EF6CCEA0016A81F /* Products */;
@@ -112,11 +168,19 @@
 			projectRoot = "";
 			targets = (
 				C0A30ED52EF6CCEA0016A81F /* MVVMLearning */,
+				C064E93B2EFC27D7000803B0 /* BookwormTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C064E93A2EFC27D7000803B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0A30ED42EF6CCEA0016A81F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,6 +191,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C064E9382EFC27D7000803B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0A30ED22EF6CCEA0016A81F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,7 +207,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C064E9412EFC27D7000803B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0A30ED52EF6CCEA0016A81F /* MVVMLearning */;
+			targetProxy = C064E9402EFC27D7000803B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		C064E9432EFC27D7000803B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BookwormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVMLearning.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVVMLearning";
+			};
+			name = Debug;
+		};
+		C064E9442EFC27D7000803B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BookwormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVMLearning.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVVMLearning";
+			};
+			name = Release;
+		};
 		C0A30EDF2EF6CCEA0016A81F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -278,12 +397,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MVVMLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,18 +432,31 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MVVMLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C064E9422EFC27D7000803B0 /* Build configuration list for PBXNativeTarget "BookwormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C064E9432EFC27D7000803B0 /* Debug */,
+				C064E9442EFC27D7000803B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C0A30ED12EF6CCEA0016A81F /* Build configuration list for PBXProject "MVVMLearning" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -340,30 +476,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		C038F6D02EF7C5B200394CC5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.11.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C038F6D12EF7C5B200394CC5 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C038F6D02EF7C5B200394CC5 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		C038F6D32EF7C5B200394CC5 /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C038F6D02EF7C5B200394CC5 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C0A30ECE2EF6CCEA0016A81F /* Project object */;
 }
