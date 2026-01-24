@@ -40,9 +40,9 @@
 			path = BookwormTests;
 			sourceTree = "<group>";
 		};
-		C0A30ED82EF6CCEA0016A81F /* MVVMLearning */ = {
+		C0A30ED82EF6CCEA0016A81F /* Chat_App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MVVMLearning;
+			path = Chat_App;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -68,7 +68,7 @@
 		C0A30ECD2EF6CCEA0016A81F = {
 			isa = PBXGroup;
 			children = (
-				C0A30ED82EF6CCEA0016A81F /* MVVMLearning */,
+				C0A30ED82EF6CCEA0016A81F /* Chat_App */,
 				C064E93D2EFC27D7000803B0 /* BookwormTests */,
 				C0A30ED72EF6CCEA0016A81F /* Products */,
 			);
@@ -123,7 +123,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				C0A30ED82EF6CCEA0016A81F /* MVVMLearning */,
+				C0A30ED82EF6CCEA0016A81F /* Chat_App */,
 			);
 			name = MVVMLearning;
 			packageProductDependencies = (
@@ -151,7 +151,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C0A30ED12EF6CCEA0016A81F /* Build configuration list for PBXProject "MVVMLearning" */;
+			buildConfigurationList = C0A30ED12EF6CCEA0016A81F /* Build configuration list for PBXProject "Chat_App" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -457,7 +457,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C0A30ED12EF6CCEA0016A81F /* Build configuration list for PBXProject "MVVMLearning" */ = {
+		C0A30ED12EF6CCEA0016A81F /* Build configuration list for PBXProject "Chat_App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C0A30EDF2EF6CCEA0016A81F /* Debug */,
