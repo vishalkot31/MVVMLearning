@@ -35,9 +35,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C064E93D2EFC27D7000803B0 /* BookwormTests */ = {
+		C064E93D2EFC27D7000803B0 /* Chat_AppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BookwormTests;
+			path = Chat_AppTests;
 			sourceTree = "<group>";
 		};
 		C0A30ED82EF6CCEA0016A81F /* Chat_App */ = {
@@ -69,7 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				C0A30ED82EF6CCEA0016A81F /* Chat_App */,
-				C064E93D2EFC27D7000803B0 /* BookwormTests */,
+				C064E93D2EFC27D7000803B0 /* Chat_AppTests */,
 				C0A30ED72EF6CCEA0016A81F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,7 +100,7 @@
 				C064E9412EFC27D7000803B0 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				C064E93D2EFC27D7000803B0 /* BookwormTests */,
+				C064E93D2EFC27D7000803B0 /* Chat_AppTests */,
 			);
 			name = BookwormTests;
 			packageProductDependencies = (
